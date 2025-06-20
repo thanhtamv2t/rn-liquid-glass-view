@@ -1,6 +1,6 @@
 {
-  "name": "rn-liquid-glass",
-  "version": "1.0.0",
+  "name": "rn-liquid-glass-view",
+  "version": "1.0.1",
   "description": "iOS-only React Native liquid glass effect",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -31,7 +31,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace rn-liquid-glass-example",
+    "example": "yarn workspace rn-liquid-glass-view-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -42,18 +42,21 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "liquid-glass",
+    "glassmorphism",
+    "react-native-liquid-glass",
+    "rn-liquid-glass-view"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahmedawaad1804/rn-liquid-glass.git"
+    "url": "git+https://github.com/ahmedawaad1804/rn-liquid-glass-view.git"
   },
   "author": "ahmedawaad1804 <ahmedawaad1804@gmail.com> (https://github.com/ahmedawaad1804)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ahmedawaad1804/rn-liquid-glass/issues"
+    "url": "https://github.com/ahmedawaad1804/rn-liquid-glass-view/issues"
   },
-  "homepage": "https://github.com/ahmedawaad1804/rn-liquid-glass#readme",
+  "homepage": "https://github.com/ahmedawaad1804/rn-liquid-glass-view#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

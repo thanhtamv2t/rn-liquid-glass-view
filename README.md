@@ -28,9 +28,9 @@ Bring your UI into the future with **React Native Liquid Glass** — a sleek, gl
 ## 📦 Installation
 
 ```sh
-npm install rn-liquid-glass
+npm install rn-liquid-glass-view
 # or
-yarn add rn-liquid-glass
+yarn add rn-liquid-glass-view
 ```
 
 ---
@@ -42,13 +42,17 @@ yarn add rn-liquid-glass
 
 ---
 
+## ⚡ Performance Tip
+
+For optimal performance on iOS, keep either the width or height of your `LiquidGlassView` under **65px**. The native `UIGlassEffect` requires significant processing power, and smaller dimensions help maintain smooth performance.
+
 ## 🚀 Usage
 
 ```tsx
-import { LiquidGlassView } from 'rn-liquid-glass';
+import { LiquidGlassView } from 'rn-liquid-glass-view';
 
 <LiquidGlassView
-  style={{ width: 200, height: 200 }}
+  style={{ width: 200, height: 61 }}
   onPress={() => console.log('Tapped the glass!')}
 />;
 ```
