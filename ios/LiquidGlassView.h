@@ -9,6 +9,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LiquidGlassView : RCTViewComponentView
+
+@property (nonatomic, strong, nullable) UIVisualEffectView *glassEffectView;
 @end
 
 NS_ASSUME_NONNULL_END

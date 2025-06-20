@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@react-native/new-app-screen": "0.80.0",
+    "or": "^0.2.0",
     "react": "19.1.0",
     "react-native": "0.80.0"
   },
@@ -26,8 +27,8 @@
     "@react-native/metro-config": "0.80.0",
     "@react-native/typescript-config": "0.80.0",
     "@rnx-kit/metro-config": "^2.1.0",
-    "react-native-test-app": "^4.3.15",
-    "babel-plugin-module-resolver": "^5.0.0"
+    "babel-plugin-module-resolver": "^5.0.0",
+    "react-native-test-app": "^4.3.15"
   },
   "engines": {
     "node": ">=18"
