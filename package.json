@@ -1,6 +1,6 @@
 {
   "name": "react-native-liquid-glass",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "any",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -16,7 +16,6 @@
   "files": [
     "src",
     "lib",
-    "android",
     "ios",
     "cpp",
     "*.podspec",
