@@ -2,6 +2,7 @@
 #ifdef RCT_NEW_ARCH_ENABLED
 #import <React/RCTViewComponentView.h>
 #import <UIKit/UIKit.h>
+#import <React/RCTComponent.h>
 
 #ifndef LiquidGlassViewNativeComponent_h
 #define LiquidGlassViewNativeComponent_h
@@ -9,8 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LiquidGlassView : RCTViewComponentView
+// @property (nonatomic, strong, nullable) RCTBubblingEventBlock onPress;
+@property (nonatomic, copy) RCTBubblingEventBlock onPress;
 
-@property (nonatomic, strong, nullable) UIVisualEffectView *glassEffectView;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -32,12 +32,7 @@ RCT_EXPORT_MODULE(LiquidGlassView)
   return containerView;
 }
 
-RCT_EXPORT_VIEW_PROPERTY(interactive, BOOL);
-RCT_EXPORT_VIEW_PROPERTY(tintColor, NSString);
-
-// RCT_EXPORT_VIEW_PROPERTY(blurType, NSString);
-// RCT_EXPORT_VIEW_PROPERTY(blurAmount, NSNumber);
-// RCT_EXPORT_VIEW_PROPERTY(reducedTransparencyFallbackColor, UIColor);
+RCT_EXPORT_VIEW_PROPERTY(onPress, RCTBubblingEventBlock);
 
 
 

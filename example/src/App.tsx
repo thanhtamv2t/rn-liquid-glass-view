@@ -6,31 +6,37 @@ import {
   Text,
   View,
 } from 'react-native';
-import { LiquidGlassView } from 'react-native-liquid-glass';
+import LiquidGlass from '../../src';
 
-const GlassView = () => {
+const GlassView = ({ text = 'Hello' }: { text?: string }) => {
   return (
-    <LiquidGlassView style={styles.box}>
-      <Text style={styles.text}>Hello</Text>
-    </LiquidGlassView>
+    <LiquidGlass
+      onPress={() => {
+        console.log('pressed');
+      }}
+      style={styles.box}
+    >
+      <Text style={styles.text}>{text}</Text>
+    </LiquidGlass>
   );
 };
 
 export default function App() {
+  console.log('dddd');
+
   return (
     <View style={styles.container}>
-      <Text style={styles.textAbsolute}>Hello</Text>
       <ScrollView style={styles.scrollView}>
-        <Image source={require('./cc.jpg')} />
-        <Image source={require('./cc.jpg')} />
-        <Image source={require('./cc.jpg')} />
+        <Image source={require('./aswan.jpg')} />
+        <Image source={require('./aswan.jpg')} />
+        <Image source={require('./aswan.jpg')} />
       </ScrollView>
       <View style={styles.boxContainer}>
-        <GlassView />
-        {/* <GlassView />
-        <GlassView />
-        <GlassView />
-        <GlassView /> */}
+        <GlassView text="Welcome" />
+        <GlassView text="To" />
+        <GlassView text="Liquid" />
+        <GlassView text="Glass" />
+        <GlassView text="Effect" />
       </View>
     </View>
   );
@@ -43,14 +49,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   box: {
-    width: 64,
-    height: 300,
+    width: 300,
+    height: 64,
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
   },
   boxContainer: {
-    // flexDirection: 'row',
     position: 'absolute',
     gap: 10,
   },

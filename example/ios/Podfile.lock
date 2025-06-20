@@ -1648,7 +1648,7 @@ PODS:
     - React-RCTFBReactNativeSpec
     - ReactCommon/turbomodule/core
     - SocketRocket
-  - react-native-liquid-glass (0.1.9):
+  - react-native-liquid-glass (0.1.13):
     - boost
     - DoubleConversion
     - fast_float
@@ -2469,7 +2469,7 @@ SPEC CHECKSUMS:
   React-logger: b69e65dc60f768e5509ac0cc27a360124bf70478
   React-Mapbuffer: b48f9f3311fd0ec0f7a5dc39d707eff521fb5f38
   React-microtasksnativemodule: d8568d0485a350c720c061ae835e09fc88c28715
-  react-native-liquid-glass: 904a3ca14f03d03d1fb20b22a520d48cda333914
+  react-native-liquid-glass: a3f45efd529eae16598af2b0fae4ce65308f6073
   React-NativeModulesApple: f10596688a03af66804cfbe61792be24a7888da8
   React-oscompat: 7c0a341cc31e350da71ddf2e46de0a845d1d1626
   React-perflogger: 4cc44451f694d6205f47bd8d5d87c9c862c3335c

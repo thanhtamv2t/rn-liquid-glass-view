@@ -17,35 +17,26 @@ using namespace facebook::react;
 
 @implementation LiquidGlassView
 
-
-+ (ComponentDescriptorProvider)componentDescriptorProvider
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    return concreteComponentDescriptorProvider<LiquidGlassViewComponentDescriptor>();
+  self = [super initWithFrame:frame];
+  if (self) {
+    self.userInteractionEnabled = YES;
+
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap)];
+    [self addGestureRecognizer:tapGesture];
+  }
+  return self;
+}
+
+- (void)handleTap
+{
+  if (self.onPress) {
+    self.onPress(@{});
+  }
 }
 
 
-
-- (void)updateProps:(Props::Shared const &)props oldProps:(Props::Shared const &)oldProps
-{
-    const auto &oldViewProps = *std::static_pointer_cast<LiquidGlassViewProps const>(_props);
-    const auto &newViewProps = *std::static_pointer_cast<LiquidGlassViewProps const>(props);
-
-
-  // if (oldViewProps.interactive != newViewProps.interactive) {
-  //   NSNumber *interactive = [NSNumber numberWithInt:newViewProps.interactive];
-  //   [self setInteractive:interactive];
-  // }
-
-    [super updateProps:props oldProps:oldProps];
-}
-
-// - (void)setInteractive:(NSNumber *)interactive
-// {
-//   if (interactive && ![self.interactive isEqualToNumber:interactive]) {
-//     _interactive = interactive;
-//     [self updateInteractive];
-//   }
-// }
 
 Class<RCTComponentViewProtocol> LiquidGlassViewCls(void)
 {
