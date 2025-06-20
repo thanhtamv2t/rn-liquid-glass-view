@@ -28,9 +28,9 @@ Bring your UI into the future with **React Native Liquid Glass** — a sleek, gl
 ## 📦 Installation
 
 ```sh
-npm install react-native-liquid-glass
+npm install rn-liquid-glass
 # or
-yarn add react-native-liquid-glass
+yarn add rn-liquid-glass
 ```
 
 ---
@@ -45,7 +45,7 @@ yarn add react-native-liquid-glass
 ## 🚀 Usage
 
 ```tsx
-import { LiquidGlassView } from 'react-native-liquid-glass';
+import { LiquidGlassView } from 'rn-liquid-glass';
 
 <LiquidGlassView
   style={{ width: 200, height: 200 }}
