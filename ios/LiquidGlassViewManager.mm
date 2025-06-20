@@ -13,9 +13,9 @@ RCT_EXPORT_MODULE(LiquidGlassView)
 
 - (UIView *)view {
 
-
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 260000
   UIGlassEffect *glassEffect = [[UIGlassEffect alloc] init];
-  glassEffect.interactive = YES;
+    glassEffect.interactive = YES;
 
   UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:glassEffect];
   effectView.backgroundColor = [UIColor clearColor];
@@ -30,6 +30,10 @@ RCT_EXPORT_MODULE(LiquidGlassView)
   containerView.layer.masksToBounds = YES ;
 
   return containerView;
+
+#else
+  return [[LiquidGlassView alloc] init];
+#endif
 }
 
 RCT_EXPORT_VIEW_PROPERTY(onPress, RCTBubblingEventBlock);

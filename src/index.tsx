@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, View } from 'react-native';
+import { Platform, Pressable } from 'react-native';
 import type { ViewProps } from 'react-native';
 import { LiquidGlassView as LiquidGlassViewNative } from './LiquidGlassView';
 
@@ -12,7 +12,7 @@ const LiquidGlassView: React.FC<Props> = (props) => {
     Platform.OS === 'android' ||
     (Platform.OS === 'ios' && Number(Platform.Version) < 26)
   ) {
-    return <View {...props} />;
+    return <Pressable {...props} />;
   }
 
   return <LiquidGlassViewNative {...props} />;
