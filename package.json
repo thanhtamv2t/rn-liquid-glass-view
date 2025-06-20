@@ -1,7 +1,7 @@
 {
   "name": "react-native-liquid-glass",
-  "version": "0.1.2",
-  "description": "any",
+  "version": "1.0.0",
+  "description": "iOS-only React Native liquid glass effect",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
