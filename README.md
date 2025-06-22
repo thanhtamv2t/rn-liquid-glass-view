@@ -19,9 +19,9 @@ Bring your UI into the future with **React Native Liquid Glass** — a sleek, gl
 
 ## 🎬 Demo
 
-[![Watch the demo](https://img.youtube.com/vi/v8gXXOGDfE8/0.jpg)](https://youtube.com/shorts/v8gXXOGDfE8?feature=share)
-
-> _Try tapping it. Feel the magic. (Unless you're on Android — in that case, imagine it’s cool.)_
+<p align="center">
+  <img src=".github/images/demo.gif" height="500" />
+</p>
 
 ---
 
